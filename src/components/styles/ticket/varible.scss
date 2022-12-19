@@ -1,0 +1,42 @@
+$blue-gr: linear-gradient(to top, #2E68FE, #349AFE);
+$blue-alice: #EBF1FD;
+$white: #fff;
+$border-btn-type-ticket: .123rem $blue-alice solid;
+$blue-cornflower: #7A92F6;
+
+
+// mixin
+// bg blue gr
+@mixin bg_blue {
+  background: $blue-gr;
+  color: $white;
+}
+
+// bg blue alice
+@mixin bg_blue_alice {
+  background: $blue-alice;
+}
+
+// class
+.bg_blue_gr {
+  @include bg_blue
+}
+
+.bg_blue_alice {
+  @include bg_blue_alice
+}
+
+.color_blue_cornflower {
+  color: $blue-cornflower;
+}
+
+/* deleted scroll page */
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+}

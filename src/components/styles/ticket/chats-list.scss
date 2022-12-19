@@ -1,0 +1,24 @@
+@import "varible";
+// style button type ticket is active and ordinary
+.btn-type-ticket {
+  background: transparent;
+  text-align: center;
+  // active type ticket
+  &.active {
+    @include bg_blue;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+}
+
+// list chats ticket is active and ordinary
+.card_list_chats {
+  background: transparent;
+  border-bottom-color: rgb(229 231 235);
+  border-bottom-width: 1px;
+  // active card chat
+  &.active {
+    background: $white;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+}
